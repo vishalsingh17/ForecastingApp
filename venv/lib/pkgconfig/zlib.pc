@@ -1,0 +1,13 @@
+prefix=/home/vishal/Desktop/ForecastingApp/venv
+exec_prefix=/home/vishal/Desktop/ForecastingApp/venv
+libdir=/home/vishal/Desktop/ForecastingApp/venv/lib
+sharedlibdir=/home/vishal/Desktop/ForecastingApp/venv/lib
+includedir=/home/vishal/Desktop/ForecastingApp/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
