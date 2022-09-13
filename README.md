@@ -6,6 +6,29 @@ This application is a front end for forecasting using Prophet library.
 
 The app structure follow the process of building and evaluating a forecast:
 
+## 🪛Installation
+
+How to run project:
+
+```
+https://github.com/vishalsingh17/OlympicsDataAnalysisWebapp
+```
+```
+cd OlympicsDataAnalysisWebapp
+```
+```
+conda create -p venv python==3.10.4
+```
+```
+conda activate ./venv
+```
+```
+pip install -r requirements.txt
+```
+```
+streamlit run app.py
+```
+## Project Description
 ### 1. Load the time series
 
 Upload a .csv file in form of a timeseries. Even though Prophet requires the date column o be labeled **ds** and the value column as **y** , it is not necessary to pre-proces the file to comply with this rule, since it is taken care of during the upload in the app. 
@@ -42,3 +65,8 @@ Runs the model with all the combinations possible within the matrix of coefficie
 - Export forecast(.csv) : will generate a link to download the dataframe with predictions and confidence intervals.
 - Export model metrics (.csv): will generate a link to downloa d the dataframe or the cross-validation
 - Export model configuration (.json): will export  the configuration of the model for reproducibility of the results.   
+
+
+### Screemshot
+![image](https://user-images.githubusercontent.com/55878408/189831109-deb97395-2c6f-4bf9-a44d-7acddfa63bc0.png)
+![image](https://user-images.githubusercontent.com/55878408/189831157-f3d5ba0b-e868-4f04-9ed7-9b9c9ea41de4.png)
